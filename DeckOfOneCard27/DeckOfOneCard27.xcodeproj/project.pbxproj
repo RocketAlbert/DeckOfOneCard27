@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		F643721822C1361A001CE64E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F643721722C1361A001CE64E /* AppDelegate.swift */; };
-		F643721A22C1361A001CE64E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F643721922C1361A001CE64E /* ViewController.swift */; };
 		F643721D22C1361A001CE64E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F643721B22C1361A001CE64E /* Main.storyboard */; };
 		F643721F22C1361B001CE64E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F643721E22C1361B001CE64E /* Assets.xcassets */; };
 		F643722222C1361B001CE64E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F643722022C1361B001CE64E /* LaunchScreen.storyboard */; };
+		F643722C22C139F3001CE64E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F643722B22C139F3001CE64E /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F643721422C1361A001CE64E /* DeckOfOneCard27.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfOneCard27.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F643721722C1361A001CE64E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F643721922C1361A001CE64E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F643721C22C1361A001CE64E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F643721E22C1361B001CE64E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F643722122C1361B001CE64E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F643722322C1361B001CE64E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F643722B22C139F3001CE64E /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,38 @@
 		F643721622C1361A001CE64E /* DeckOfOneCard27 */ = {
 			isa = PBXGroup;
 			children = (
+				F643722A22C136B6001CE64E /* Storyboard */,
+				F643722922C13674001CE64E /* Resources */,
+				F643722D22C13C2C001CE64E /* Models */,
+			);
+			path = DeckOfOneCard27;
+			sourceTree = "<group>";
+		};
+		F643722922C13674001CE64E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				F643721722C1361A001CE64E /* AppDelegate.swift */,
-				F643721922C1361A001CE64E /* ViewController.swift */,
-				F643721B22C1361A001CE64E /* Main.storyboard */,
 				F643721E22C1361B001CE64E /* Assets.xcassets */,
 				F643722022C1361B001CE64E /* LaunchScreen.storyboard */,
 				F643722322C1361B001CE64E /* Info.plist */,
 			);
-			path = DeckOfOneCard27;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F643722A22C136B6001CE64E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F643721B22C1361A001CE64E /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F643722D22C13C2C001CE64E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F643722B22C139F3001CE64E /* Card.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F643721A22C1361A001CE64E /* ViewController.swift in Sources */,
 				F643721822C1361A001CE64E /* AppDelegate.swift in Sources */,
+				F643722C22C139F3001CE64E /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CFV9N227P7;
-				INFOPLIST_FILE = DeckOfOneCard27/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCard27/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +326,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CFV9N227P7;
-				INFOPLIST_FILE = DeckOfOneCard27/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCard27/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
